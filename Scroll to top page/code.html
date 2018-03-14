@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll To Top</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="scroll.css">
+	
+	<!--Script for scrolling-->
+<script type="text/javascript">
+	// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+   
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+ 
+     $('html, body').animate({scrollTop:0}, 'slow');
+}
+</script>
+<!--Script for scrolling-->
+
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+<div style="background-color:lightgrey;padding:30px 30px 3500px">WRITE LESS DO MORE</div>
+
+</body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
