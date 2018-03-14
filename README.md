@@ -1,4 +1,3 @@
 # web_development
-This is demo of parallax using HTML &amp; CSS.
 
-Simple parallex example.
+Simple parallex example with the usage of HTML and CSS.
